@@ -1,0 +1,87 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  color: black;
+  height: auto;
+  padding: 30px 10px 10px 10px;
+  background-color: lightgrey;
+  border: 2px solid black;
+  position: relative;
+}
+
+span {
+  height: auto;
+  width: 30%;
+  position: absolute;
+  border: 1px solid black;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#boxChicken{
+  background-color: lightgreen;
+}
+
+#boxBeef{
+  background-color: lightpink;
+}
+
+#boxSushi{
+  background-color: lightskyblue;
+}
+
+/********** Desktop Breakpoint **********/
+@media (min-width: 992px) {
+  .col-lg-4, .col-lg-6 {
+    float: left;
+    position: relative;
+    padding: 10px;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+
+}
+
+/********** Tablet Breakpoints **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 10px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Phone Breakpoints **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 10px;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
